@@ -1,0 +1,215 @@
+@import url(https://fonts.googleapis.com/css?family=Bangers);
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+
+
+
+/* -------------- */
+
+body{
+
+    font-family: 'Bangers', cursive;
+    font-size:large;
+    width: 100vw;
+
+    margin:0;
+    scroll-behavior: smooth;
+
+
+}
+
+.navbar{
+    position:relative;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.navbar .TITRE{
+    position: relative;
+    font-size: 2em;
+    font-weight:bold;
+
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.TITRE a{
+    font-family: 'Bangers', cursive;
+    color: #000000;
+}
+
+
+.navbar .TITRE a:hover
+{
+    color: rgba(0, 0, 0, 0.71);
+}
+
+
+.navbar .nav-links{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+.navbar .nav-links ul{
+    display: flex;
+}
+
+
+.nav-button{
+    border: none;
+    display: none;
+    top: 50px;
+    right: 50px;
+    width: 35px;
+    position: absolute;
+}
+
+
+.navbar .nav-links ul li{
+    margin: 0 25px;
+}
+
+.navbar .nav-links ul li a{
+    color: rgb(0, 0, 0);
+    font-family: "Gurmukhi Sangam MN", serif;
+    padding: 15%;
+    border-bottom: none;
+}
+
+.navbar .nav-links ul li a:hover {
+    color: rgba(0, 0, 0, 0.66);
+    border-bottom: solid red;
+}
+
+#account{
+    color: rgba(0, 0, 0, 0.66);
+    border-bottom: solid red;
+}
+
+#fr {
+    width: 40px;
+}
+
+#en {
+    width: 40px;
+    height: 25px;
+}
+
+
+
+h1{
+    text-align: center;
+}
+
+
+#upload-form{
+    margin-top: 40px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+
+#bttn-log{
+    font-size: large;
+    color: white;
+    padding: 6px 50px;
+    margin-top: 10px;
+    background-color: royalblue;
+}
+
+#bttn-log:hover{
+    background-color: rgba(65, 105, 225, 0.69);
+}
+
+
+
+
+
+
+
+footer{
+    font-family: "Gurmukhi Sangam MN", serif;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE DISPLAY*/
+
+
+
+
+@media screen and (max-width: 900px) {
+
+
+    body{
+        font-size: small;
+    }
+    .navbar .nav-links {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.89);
+        backdrop-filter: blur(7px);
+        margin-left: -100%;
+        transition: 0.5s;
+    }
+
+    .nav-links.nav-dropdown {
+        margin-left: 0;
+        transition: 0.5s;
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+    }
+
+    .navbar .nav-links ul li {
+        margin: 25px 0;
+        font-size: 1.2em;
+    }
+
+
+    .nav-button {
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 5%;
+    }
+}

@@ -1,0 +1,560 @@
+@import url(https://fonts.googleapis.com/css?family=Bangers);
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+
+
+
+/* -------------- */
+
+body{
+
+    font-family: 'Bangers', cursive;
+    font-size:large;
+    width: 100vw;
+    margin:auto;
+    background-color: #ffffff;
+    scroll-behavior: smooth;
+}
+
+
+
+.navbar{
+    position:relative;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    /*background-color: rgba(65, 65, 65, 0.89);*/
+    /*backdrop-filter: blur(7px);*/
+    background-size: contain;
+    /*background-color: #282828;*/
+    /*background-image: linear-gradient(315deg, #5e5e5e 0%, #000000 74%);*/
+}
+
+
+.navbar .TITRE{
+    position: relative;
+    font-size: 2em;
+    font-weight:bold;
+
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.TITRE a{
+    color: #000000;
+}
+
+
+.navbar .TITRE a:hover
+{
+    color: rgba(0, 0, 0, 0.71);
+}
+
+
+.navbar .nav-links{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+.navbar .nav-links ul{
+    display: flex;
+}
+
+
+
+.nav-button{
+    border: none;
+    display: none;
+    top: 50px;
+    right: 50px;
+    width: 35px;
+    position: absolute;
+}
+
+
+
+.navbar .nav-links ul li{
+    margin: 0 25px;
+}
+
+
+.navbar .nav-links ul li a{
+    color: rgb(0, 0, 0);
+    font-family: "Gurmukhi Sangam MN", serif;
+    padding: 15%;
+    border-bottom: none;
+}
+
+
+.navbar .nav-links ul li a:hover {
+    color: rgba(0, 0, 0, 0.66);
+    border-bottom: solid red;
+}
+
+
+#home{
+    color: rgba(0, 0, 0, 0.66);
+    border-bottom: solid red;
+}
+
+#fr {
+    width: 40px;
+}
+
+#en {
+    width: 40px;
+    height: 25px;
+}
+
+
+#seeAll{
+    font-style: italic;
+    color: black;
+    font-size: xx-large;
+    text-align: center;
+}
+div a{
+    color: black;
+}
+
+div a:hover{
+    color: red;
+}
+
+
+
+
+
+.Label{
+    display: flex;
+    position: absolute;
+
+    justify-content: center;
+    width:220px;
+
+    background: #ff1c1c;
+    border:1px solid #222;
+    box-shadow:3px 3px 0 #222;
+}
+
+
+
+.New{
+    color: white;
+    margin-right: 90%;
+    margin-bottom: 40%;
+    transform: rotate(-19deg);
+}
+.Recommended{
+    background-color: #7e00c7;
+    color: white;
+    margin-left: 90%;
+    margin-bottom: 40%;
+    transform: rotate(+19deg);
+
+}
+
+.Popular{
+    background-color: orange;
+    color: white;
+    margin-right: 95%;
+    margin-bottom: 40%;
+    transform: rotate(-19deg);
+
+}
+
+
+.container1{
+    background-color: rgba(255, 255, 255, 0.68);
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin: 5%;
+    border: solid black;
+}
+
+
+.box1{
+    box-shadow: 60px -16px #000000;
+    border-width: 3px 3px 5px 5px;
+    border-radius:4% 95% 6% 95%/95% 4% 92% 5%;
+    transform: rotate(-2deg);
+}
+
+.box2{
+    box-shadow: 60px 16px #000000;
+    border-width: 5px 3px 3px 5px;
+    border-radius:95% 4% 97% 5%/4% 94% 3% 95%;
+    transform: rotate(2deg);
+}
+
+.box3{
+    box-shadow: 60px 16px #000000;
+    border-width: 5px 3px 3px 5px;
+    border-radius:95% 4% 97% 5%/4% 94% 3% 95%;
+    transform: rotate(2deg);
+}
+
+
+.Comic-container img{
+    width: 240px;
+    height: 400px;
+}
+
+
+h3 a{
+    color: black;
+}
+
+h3 a:hover{
+    color: red;
+}
+
+.comic-details{
+    padding-bottom: 2%;
+}
+
+.comic-details h3{
+    margin-left: 5%;
+    margin-top: 14px;
+}
+
+
+
+
+
+.go-top {
+    --offset: 50px;
+    position: sticky;
+    bottom: 30px;
+    left: 90%;
+    right:0;
+
+    place-self:end;
+    margin-top: calc(100vh + var(--offset));
+    /* visual styling */
+    text-decoration: none;
+    padding: 20px;
+    font-family: sans-serif;
+    color: #fff;
+    background: #000;
+    border-radius: 100px;
+    white-space: nowrap;
+    transition: 0.5s;
+}
+
+.go-top:hover{
+    background-color: #3a3a3a;
+    transition: 0.5s;
+}
+
+
+li button {
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: lighter;
+    box-shadow: 5px 5px 0 #ffffff,
+    -5px -5px 0 #000000,
+    -5px 5px 0 #000000,
+    5px -5px 0 #000000;
+    transition: 500ms ease-in-out;
+    background-color: white;
+}
+
+
+footer{
+    font-family: "Gurmukhi Sangam MN", serif;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+
+
+
+
+
+
+/* RESPONSIVE DISPLAY*/
+
+
+@media screen and (max-width: 1400px) {
+    .Comic-container img{
+        height: 320px;
+        width: 250px;
+    }
+    .container1{
+        background-color: rgba(255, 255, 255, 0.68);
+        display: flex;
+        flex-direction: row;
+    }
+    
+}
+
+@media screen and (max-width: 1300px) {
+    .Comic-container img{
+        height: 270px;
+        width: 200px;
+    }
+    .container1{
+        background-color: rgba(255, 255, 255, 0.68);
+        display: flex;
+        flex-direction: row;
+
+    }
+
+}
+
+
+@media screen and (max-width: 1050px) {
+    .Comic-container img{
+        height: 240px;
+        width: 170px;
+    }
+    .container1{
+        background-color: rgba(255, 255, 255, 0.68);
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 900px){
+
+
+    .navbar .TITRE{
+        font-size: x-large;
+    }
+
+    .navbar .nav-links {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.89);
+        backdrop-filter: blur(7px);
+        margin-left:-100% ;
+        z-index: 999;
+        transition: 0.5s;
+    }
+
+    .nav-links.nav-dropdown{
+        margin-left: 0;
+        transition: 0.5s;
+    }
+
+    .nav-links ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+    }
+
+    .navbar .nav-links ul li{
+        margin: 25px 0;
+        font-size: 1.2em;
+    }
+
+
+    .nav-button{
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 5%;
+        z-index: 999;
+    }
+
+    .Label{
+        font-size: small;
+    }
+
+
+
+
+    .New{
+        width: 100px;
+        margin-bottom:360px;
+        margin-left: 40px;
+    }
+
+    .Recommended{
+        width: 150px;
+        margin-bottom:350px;
+        margin-right: 90px;
+    }
+
+    .Popular{
+        width: 100px;
+        margin-bottom:290px;
+        margin-left: 40px;
+    }
+
+
+
+
+    .container1{
+        background-color: rgba(255, 255, 255, 0.68);
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    .box1{
+        box-shadow: none;
+    }
+
+    .box2{
+        box-shadow: none;
+    }
+
+    .box3{
+        box-shadow: none;
+    }
+
+    .Comic-container img{
+        height: 220px;
+        width: 150px;
+    }
+
+    .comic-details h3{
+        margin-bottom: 5%;
+        margin-top: 0;
+    }
+    .comic-details{
+        margin-bottom: 10%;
+    }
+
+
+    h3{
+        font-size: small;
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+        font-weight: bold;
+    }
+}
+
+
+@media screen and (max-width: 770px) {
+    .Comic-container img{
+        height: 170px;
+        width: 120px;
+    }
+    .comic-details h3 a{
+        font-size: x-small;
+    }
+}
+
+@media screen and (max-width: 609px) {
+    .Comic-container img{
+        height: 150px;
+        width: 100px;
+    }
+
+    .comic-details h3 a{
+        font-size: x-small;
+    }
+
+
+    .New{
+        width: 100px;
+        margin-bottom:260px;
+        margin-left: 40px;
+    }
+
+    .Recommended{
+        width: 150px;
+        margin-bottom:250px;
+        margin-right: 90px;
+    }
+
+    .Popular{
+        width: 100px;
+        margin-bottom:210px;
+        margin-left: 40px;
+    }
+}
+
+
+@media screen and (max-width: 460px) {
+
+
+    .container1{
+        background-color: rgba(255, 255, 255, 0.68);
+        display: flex;
+        flex-direction: row;
+        padding-right: 0;
+    }
+
+    .Comic-container img{
+        height: 120px;
+        width: 80px;
+    }
+
+
+    .comic-details h3 a{
+        font-size: x-small;
+    }
+    .New{
+        width: 100px;
+        margin-bottom:230px;
+        margin-left: 40px;
+    }
+
+    .Recommended{
+        width: 150px;
+        margin-bottom:200px;
+        margin-right: 90px;
+    }
+
+    .Popular{
+        width: 100px;
+        margin-bottom:180px;
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 455px) {
+    .Comic-container img{
+        height: 110px;
+        width: 80px;
+    }
+    .comic-details h3 a{
+        font-size: x-small;
+    }
+
+
+}
+
+@media screen and (max-width: 373px) {
+    .Comic-container img{
+        height: 100px;
+        width: 70px;
+    }
+}

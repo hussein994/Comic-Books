@@ -1,0 +1,88 @@
+/*@import url(https://fonts.googleapis.com/css?family=Bangers);*/
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: large;
+    font-family: "Gurmukhi Sangam MN", serif;
+}
+
+#form-messages{
+    margin-bottom: 10px;
+    display: none;
+    background-color: #ffa2a2;
+    color: #9f1717;
+    border:1px solid red ;
+    padding: 20px 60px 20px 60px;
+    max-width: 250px;
+}
+
+#form{
+    background-color: rgb(0, 0, 0);
+    padding-top: 5%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding-bottom: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border: solid #fdfdfd;
+
+    box-shadow: 60px -16px #ffffff;
+    border-width: 3px 3px 5px 5px;
+    border-radius:4% 95% 6% 95%/95% 4% 92% 5%;
+}
+
+form{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+a{
+    color: #ffffff;
+}
+
+a:hover{
+    color: rgba(255, 255, 255, 0.72);
+}
+
+
+#bttn-log{
+    font-size: large;
+    color: white;
+    padding: 6px 50px;
+    background-color: royalblue;
+}
+
+#bttn-log:hover{
+    background-color: rgba(65, 105, 225, 0.69);
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+    #form{
+        box-shadow: none;
+        width: 250px;
+    }
+
+    #form-messages{
+        padding: 30px;
+    }
+
+}

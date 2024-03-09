@@ -1,0 +1,321 @@
+@import url(https://fonts.googleapis.com/css?family=Bangers);
+
+* {
+    margin: 0 0 0 0x;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+
+body{
+
+    font-family: 'Bangers', cursive;
+    font-size:large;
+    width: 100vw;
+    margin:auto;
+    background-color: #ffffff;
+    scroll-behavior: smooth;
+}
+
+
+.navbar{
+    position:relative;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+
+.navbar .TITRE{
+    position: relative;
+    font-size: 2em;
+    font-weight:bold;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.TITRE a{
+    color: #000000;
+}
+
+
+.navbar .TITRE a:hover
+{
+    color: rgba(0, 0, 0, 0.71);
+}
+
+
+.navbar .nav-links{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+.navbar .nav-links ul{
+    display: flex;
+}
+
+
+.nav-button{
+    border: none;
+    display: none;
+    top: 50px;
+    right: 50px;
+    width: 35px;
+    position: absolute;
+}
+
+
+.navbar .nav-links ul li{
+    margin: 0 25px;
+}
+
+.navbar .nav-links ul li a{
+    color: rgb(0, 0, 0);
+    font-family: "Gurmukhi Sangam MN", serif;
+    padding: 15%;
+    border-bottom: none;
+}
+
+.navbar .nav-links ul li a:hover {
+    color: rgba(0, 0, 0, 0.66);
+    border-bottom: solid red;
+}
+
+
+
+#fr {
+    width: 40px;
+}
+
+#en {
+    width: 40px;
+    height: 25px;
+}
+
+
+
+
+
+.container1{
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+}
+
+
+.Comic-container img{
+    /*max-width: 380px;*/
+    /*height: 600px;*/
+
+    display: block;
+    width:380px;
+    height:600px;
+
+}
+
+h3 a{
+    color: black;
+}
+
+h3 a:hover{
+    color: red;
+}
+
+
+.comic-details{
+    padding-bottom: 2%;
+}
+
+.comic-details h3{
+    margin-left: 5%;
+    margin-top: 14px;
+}
+
+
+
+
+.go-top {
+    --offset: 50px;
+    position: sticky;
+    bottom: 30px;
+    left: 90%;
+    right:0;
+
+    place-self:end;
+    margin-top: calc(100vh + var(--offset));
+    /* visual styling */
+    text-decoration: none;
+    padding: 20px;
+    font-family: sans-serif;
+    color: #fff;
+    background: #000;
+    border-radius: 100px;
+    white-space: nowrap;
+}
+
+.go-top:hover{
+    background-color: #3a3a3a;
+}
+
+
+footer{
+    font-family: "Gurmukhi Sangam MN", serif;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+
+
+/* TODO: make responsive*/
+
+/*Responsive*/
+@media screen and (max-width: 1257px) {
+
+    .Comic-container img{
+        max-width: 280px;
+        height: 400px;
+    }
+    .container1{
+        grid-gap: 20px;
+    }
+}
+
+
+@media screen and (max-width: 951px) {
+
+    .Comic-container img{
+        max-width: 230px;
+        height: 300px;
+    }
+    .container1{
+        grid-gap: 20px;
+    }
+}
+
+
+@media screen and (max-width: 846px) {
+
+    .Comic-container img{
+        max-width: 200px;
+        height: 290px;
+    }
+    .container1{
+        grid-gap: 20px;
+    }
+    .navbar .TITRE{
+        font-size: x-large;
+    }
+
+    .navbar .nav-links {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.89);
+        backdrop-filter: blur(7px);
+        margin-left:-100% ;
+        z-index: 999;
+        transition: 0.5s;
+    }
+
+    .nav-links.nav-dropdown{
+        margin-left: 0;
+        transition: 0.5s;
+    }
+
+    .nav-links ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+    }
+
+    .navbar .nav-links ul li{
+        margin: 25px 0;
+        font-size: 1.2em;
+    }
+
+
+    .nav-button{
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 5%;
+        z-index: 999;
+    }
+}
+@media screen and (max-width: 733px) {
+
+    .Comic-container img{
+        max-width: 190px;
+        height: 280px;
+    }
+    .container1{
+        grid-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 673px) {
+
+    .Comic-container img{
+        max-width: 130px;
+        height: 200px;
+    }
+
+    .comic-details h3 a{
+        font-size: small;
+    }
+    .container1{
+        grid-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+
+    .Comic-container img{
+        max-width: 100px;
+        height: 160px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .container1{
+        grid-gap: 20px;
+    }
+}
+@media screen and (max-width: 345px) {
+
+    .container1{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    .Comic-container img{
+        max-width: 250px;
+        height: 340px;
+        margin-left: 40px;
+
+    }
+
+    .comic-details h3 a{
+        font-size: large;
+        margin-left: 25px;
+    }
+}
